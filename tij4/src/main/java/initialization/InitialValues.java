@@ -1,3 +1,5 @@
+package initialization;
+
 //: initialization/InitialValues.java
 // Shows default initial values.
 import static net.mindview.util.Print.*;
@@ -16,6 +18,8 @@ public class InitialValues {
     print("Data type      Initial value");
     print("boolean        " + t);
     print("char           [" + c + "]");
+    System.out.println(c == '\u0000');
+    System.out.println("[" +String.valueOf('\u0000')+ "]");
     print("byte           " + b);
     print("short          " + s);
     print("int            " + i);

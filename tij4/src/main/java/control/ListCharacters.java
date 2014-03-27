@@ -1,3 +1,5 @@
+package control;
+
 //: control/ListCharacters.java
 // Demonstrates "for" loop by listing
 // all the lowercase ASCII letters.
