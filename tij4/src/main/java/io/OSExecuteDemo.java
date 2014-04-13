@@ -1,10 +1,13 @@
+package io;
+
 //: io/OSExecuteDemo.java
 // Demonstrates standard I/O redirection.
 import net.mindview.util.*;
 
 public class OSExecuteDemo {
   public static void main(String[] args) {
-    OSExecute.command("javap OSExecuteDemo");
+//    OSExecute.command("javap OSExecuteDemo");
+	  OSExecute.command("pwd");
   }
 } /* Output:
 Compiled from "OSExecuteDemo.java"
