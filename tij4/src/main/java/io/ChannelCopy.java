@@ -1,3 +1,5 @@
+package io;
+
 //: io/ChannelCopy.java
 // Copying a file using channels and buffers
 // {Args: ChannelCopy.java test.txt}
@@ -16,6 +18,8 @@ public class ChannelCopy {
       in = new FileInputStream(args[0]).getChannel(),
       out = new FileOutputStream(args[1]).getChannel();
     ByteBuffer buffer = ByteBuffer.allocate(BSIZE);
+
+    System.out.println("boolean :" + buffer.isDirect());
     while(in.read(buffer) != -1) {
       buffer.flip(); // Prepare for writing
       out.write(buffer);

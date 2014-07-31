@@ -23,7 +23,7 @@ public class LabeledFor {
           print("break");
           i++; // Otherwise i never
                // gets incremented.
-          break;//same to break inner
+          break inner;//same to break inner
         }
         if(i == 7) {
           print("continue outer");
@@ -42,6 +42,7 @@ public class LabeledFor {
           }
         }
       }
+        print("break hit me!");
     }
     // Can't break or continue to labels here
   }

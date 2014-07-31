@@ -1,3 +1,5 @@
+package io;
+
 //: io/DirectoryDemo.java
 // Sample use of Directory utilities.
 import java.io.*;

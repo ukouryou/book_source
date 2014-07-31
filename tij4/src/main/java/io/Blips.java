@@ -1,3 +1,5 @@
+package io;
+
 //: io/Blips.java
 // Simple use of Externalizable & a pitfall.
 import java.io.*;

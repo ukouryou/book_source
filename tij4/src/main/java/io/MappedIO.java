@@ -1,4 +1,5 @@
-//: io/MappedIO.java
+package io;
+
 import java.nio.*;
 import java.nio.channels.*;
 import java.io.*;
@@ -87,7 +88,10 @@ public class MappedIO {
         IntBuffer ib = fc.map(
           FileChannel.MapMode.READ_WRITE, 0, fc.size())
           .asIntBuffer();
+        System.out.println("boolean:" +ib.isDirect());
         ib.put(0);
+
+
         for(int i = 1; i < numOfUbuffInts; i++)
           ib.put(ib.get(i - 1));
         fc.close();

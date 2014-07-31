@@ -1,3 +1,5 @@
+package io;
+
 //: io/Blip3.java
 // Reconstructing an externalizable object.
 import java.io.*;
