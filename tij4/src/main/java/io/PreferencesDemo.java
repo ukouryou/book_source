@@ -1,3 +1,5 @@
+package io;
+
 //: io/PreferencesDemo.java
 import java.util.prefs.*;
 import static net.mindview.util.Print.*;

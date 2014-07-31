@@ -3,6 +3,7 @@ package io;
 //: io/BufferedInputFile.java
 import java.io.*;
 
+
 public class BufferedInputFile {
   // Throw exceptions to console:
   public static String
@@ -19,6 +20,7 @@ public class BufferedInputFile {
   }
   public static void main(String[] args)
   throws IOException {
-    System.out.print(read("BufferedInputFile.java"));
+	  System.out.println(new File(".").getCanonicalPath());
+    System.out.print(read("./src/main/java/io/BufferedInputFile.java"));
   }
 } /* (Execute to see output) *///:~
