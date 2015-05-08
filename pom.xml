@@ -10,6 +10,7 @@
 
   <modules>
     <module>tij4</module>
+    <module>algs4</module>
   </modules>
 
   <dependencyManagement>
